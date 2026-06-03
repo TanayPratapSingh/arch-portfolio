@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enya Sandvold-Olsen</title>
+<meta name="description" content="Enya Sandvold-Olsen. Architecture and design. Selected work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header" id="header">
+  <a class="wordmark" href="index.html">Enya Sandvold&#8209;Olsen</a>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Work</a>
+    <a href="about.html">Profile</a>
+    <a href="contact.html">Contact</a>
+    <span class="nav-sep"></span>
+    <div class="view-toggle">
+      <button data-view="gallery" class="active" aria-label="Gallery view">Gallery</button>
+      <button data-view="list" aria-label="List view">List</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="grid" id="work-grid"></section>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> Enya Sandvold-Olsen</span>
+  <span>Syracuse, New York</span>
+</footer>
+
+<script src="projects.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const grid = document.getElementById('work-grid');
+  PROJECTS.forEach((p,i) => {
+    const a = document.createElement('a');
+    a.className = 'tile';
+    a.href = `project.html?id=${p.id}`;
+    a.style.animationDelay = (i*0.06)+'s';
+    a.innerHTML = `
+      <div class="img-wrap">
+        <img src="images/${p.cover}" alt="${p.title}" loading="lazy"
+             onerror="this.closest('.img-wrap').classList.add('placeholder'); this.style.display='none';">
+        <span class="ph-label">${p.cover}</span>
+        <div class="overlay">
+          <div class="o-top"><span>${p.id}</span><span>${p.type}</span></div>
+          <div class="o-title">${p.title}</div>
+          <span class="o-view">View project &rarr;</span>
+        </div>
+      </div>
+      <div class="row">
+        <span class="r-num">${p.id}</span>
+        <span class="r-title">${p.title}</span>
+        <span class="r-type">${p.type}</span>
+        <span class="r-year">${p.year}</span>
+      </div>`;
+    grid.appendChild(a);
+  });
+
+  // view toggle
+  document.querySelectorAll('.view-toggle button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.view-toggle button').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      grid.classList.toggle('list-view', btn.dataset.view==='list');
+    });
+  });
+
+  // header border on scroll
+  const header = document.getElementById('header');
+  addEventListener('scroll',()=>header.classList.toggle('scrolled', scrollY>20));
+</script>
+</body>
+</html>

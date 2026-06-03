@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile, Enya Sandvold-Olsen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header" id="header">
+  <a class="wordmark" href="index.html">Enya Sandvold&#8209;Olsen</a>
+  <nav class="site-nav">
+    <a href="index.html">Work</a>
+    <a href="about.html" class="active">Profile</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article class="text-page">
+    <h1>Profile</h1>
+    <p class="big">A designer working across architecture, furniture, and the studies between them.</p>
+    <p>Enya Sandvold-Olsen works from analytical drawing toward built form. The work covers precedent studies, residential schemes, public buildings, and objects, held together by an interest in structure, material, and the quiet logic of a plan.</p>
+    <p>This portfolio collects recent academic and studio work, from early study sets through resolved residential schemes such as the House in Sakuradai and the Tube House.</p>
+
+    <h2>Selected work</h2>
+    <p>Study Set. Precedent Study, ARC 107. Community Center. Chair. Structures and Sustainability. Tube House. House in Sakuradai. Sakuradai, Final.</p>
+
+    <h2>Focus</h2>
+    <p>Residential architecture, public space, furniture design, structural and environmental study, and architectural representation through drawing, render, and photography.</p>
+
+    <h2>Based in</h2>
+    <p>Syracuse, New York.</p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> Enya Sandvold-Olsen</span>
+  <a href="index.html">Index</a>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const header=document.getElementById('header');addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>20));
+</script>
+</body>
+</html>
