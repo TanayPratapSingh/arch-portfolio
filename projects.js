@@ -11,7 +11,7 @@ const PROJECTS = [
     location: "Syracuse, NY",
     summary: "A sequence of analytical exercises in line, plate and composition, exploring form, proportion and tonal weight as the groundwork of a design practice.",
     cover: "1.png",
-    images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png","Extra+Credit+[Converted].png"]
+    images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png"]
   },
   {
     id: "02",
@@ -33,7 +33,7 @@ const PROJECTS = [
     location: "Studio project",
     summary: "A civic room for a neighbourhood. Exterior renders and atmospheric studies that test how a public building meets the street and holds a crowd.",
     cover: "Render 1.png",
-    images: ["Render 1.png","Render 2.png","Render 3.png","CAC 1.png","CAC 2.png","CAC 3.png","CAC 4.png","CAC 5.png","CAC 6.png"]
+    images: ["Render 1.png","Render 2.png","Render 3.png","CAC 1.png","CAC 2.png","CAC 3.png","CAC 4.png","CAC 5.png","CAC 6.png","Structures A.png"]
   },
   {
     id: "04",
@@ -44,7 +44,7 @@ const PROJECTS = [
     location: "Studio project",
     summary: "A chair developed through prototyping, measured drawing and a full assembly diagram. An object study in joinery, comfort and economy of material.",
     cover: "chair 1.jpg",
-    images: ["chair 1.jpg","chair  2.jpg","chair 3.jpg","chair 4 .jpg","Measurements and Assembly Diagram.png","picture.png"]
+    images: ["chair 1.jpg","chair  2.jpg","chair 3.jpg","chair 4 .jpg","Chair 2 (1).png","Chair 2 (2).png","Measurements and Assembly Diagram.png","picture.png"]
   },
   {
     id: "05",
@@ -87,7 +87,7 @@ const PROJECTS = [
     program: "Single dwelling, final scheme",
     location: "Sakuradai",
     summary: "The resolved Sakuradai scheme, set out as a multi-page presentation with the material and contextual references that shaped it.",
-    cover: "Project 1_Page_1.png",
-    images: ["Project 1_Page_1.png","Project 1_Page_2.png","Project 1_Page_3.png","Project 1_Page_4.png","Project 1_Page_5.png","Project 1_Page_6.png","Project 1_Page_7.png","House in sakuradai 1.jpeg","bswood.jpeg","a.png","b.png","c.png","d.png"]
+    cover: "bswood.jpeg",
+    images: ["bswood.jpeg","Project 1_Page_1.png","Project 1_Page_2.png","Project 1_Page_3.png","Project 1_Page_4.png","Project 1_Page_5.png","Project 1_Page_6.png","Project 1_Page_7.png","House in sakuradai 1.jpeg","a.png","b.png","c.png","d.png","Rwanda 1.png","Rwanda 2.png","Rwanda 3 (1).png","Rwanda 4.png","Rwanda.png"]
   }
 ];
