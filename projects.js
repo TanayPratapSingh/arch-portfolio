@@ -21,8 +21,8 @@ const PROJECTS = [
     program: "Design I precedent study",
     location: "Syracuse, NY",
     summary: "A close reading of a built work for Design I. Plan, section and photographic analysis, redrawn and re-photographed to understand how the building is made.",
-    cover: "Section 1 finale.png",
-    images: ["Section 1 finale.png","plan.png","photo 1.jpeg","photo 2.jpeg","photo 3.jpeg","Photo done.jpeg","Photoshop 1.jpeg","IMG_6202.JPG"]
+    cover: "Unknown-2.jpeg",
+    images: ["Unknown-2.jpeg","Section 1 finale.png","plan.png","Image.png","Unknown.jpeg","Unknown-1.jpeg","Unknown-3.jpeg","Unknown-4.jpeg","Unknown-5.jpeg","Unknown-1.png","Unknown.png"]
   },
   {
     id: "03",
