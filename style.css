@@ -5,7 +5,7 @@
   --muted:#8c897f;
   --faint:#b6b3a8;
   --line:#dcd9cf;
-  --pad:clamp(20px,3.4vw,60px);
+  --pad:clamp(20px,3vw,44px);
   --gap:clamp(8px,0.9vw,16px);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -76,7 +76,7 @@ body::before{
 /* ---------- grid (gallery) ---------- */
 main{position:relative;z-index:2}
 .grid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));
   gap:var(--gap);padding:calc(var(--pad)*.9) var(--pad) calc(var(--pad));
 }
 .tile{
